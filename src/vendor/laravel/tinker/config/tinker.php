@@ -4,6 +4,36 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Console Commands
+    |--------------------------------------------------------------------------
+    |
+    | This option allows you to add additional Artisan commands that should
+    | be available within the Tinker environment. Once the command is in
+    | this array you may execute the command in Tinker using its name.
+    |
+    */
+
+    'commands' => [
+        // App\Console\Commands\ExampleCommand::class,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Alias Whitelist
+    |--------------------------------------------------------------------------
+    |
+    | Tinker will not automatically alias classes in your vendor namespaces
+    | but you may explicitly allow a subset of classes to get aliased by
+    | adding the names of each of those classes to the following list.
+    |
+    */
+
+    'alias' => [
+        //
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Alias Blacklist
     |--------------------------------------------------------------------------
     |
@@ -13,6 +43,8 @@ return [
     |
     */
 
-    'dont_alias' => [],
+    'dont_alias' => [
+        'App\Nova',
+    ],
 
 ];
